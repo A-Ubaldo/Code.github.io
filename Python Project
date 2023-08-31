@@ -1,0 +1,238 @@
+print("Codes number 1")
+
+nm=input("Enter your name : ")
+ae=input("Enter your age : ")
+by=input("Enter your birthday :")
+gdr=input("Enter your gender :")
+ass=input("Enter your address :")
+print("\n")
+print("==========================================Personal Information==========================================")
+print("Your name is : " +nm)
+print("Your age is : "+ae)
+print("Your birthday is on : "+by)
+print("Your gender is : "+gdr)
+print("Your address is : "+ass)
+print("\n")
+print("--------------------------------------------------------------------------------------------------------------------")
+
+#2
+print("Codes number 2")
+
+ay=input("Input anything : ")
+
+if ay=="a":
+    print("The data types is STRING")
+    
+elif ay=="1":
+    print("The data types is INTGER")
+    
+elif ay=="1.1":
+    print("The data types is FLOAT")
+    
+elif ay=="True":
+    print("The data types is BOOLEAN")
+    
+elif ay=="[]":
+    print("The data types is LISTS")
+
+elif ay=="()":
+    print("The data types is TUPLES")
+
+elif ay=="{}":
+    print("The data types is DICTIONARIES")
+    
+    
+else :
+    print("Invalid input")
+
+print("\n")
+print("--------------------------------------------------------------------------------------------------------------------")
+
+#3
+print("Codes number 3")
+
+fn=int(input("Input first number : "))
+sn=int(input("Input second number : "))
+print("\n")
+#even
+print("The even between the two numbers are :")
+for nmbr in range(fn, sn + 1):
+    
+    if nmbr % 2 == 0:
+        print(nmbr, end = " ")
+else :
+    
+	print("Invalid Input")   
+#odd
+print("\n")
+print("The odd between the two numbers are :")
+for nmbr in range(fn, sn + 1):
+    
+    if nmbr % 2 != 0:
+        print( nmbr, end = " ")
+else :
+    
+	print("Invalid Input") 
+
+print("\n")
+print("--------------------------------------------------------------------------------------------------------------------")
+
+#4
+print("Codes number 4")
+
+nr=str(input("Input number range :"))
+
+def result(nr):
+	
+	for nmbr in range(nr):
+		if nmbr % 5 == 0:
+		    print(str(nmbr) + " ", end = "")
+	
+nr = 1000
+result(nr)
+print("\n")
+print("--------------------------------------------------------------------------------------------------------------------")
+
+#5
+print("Codes number 5")
+print("\n")
+print("Names List")
+nlst= ["Angelica","Geraldjek","Kriztyn","Ann","Rean"]
+print(nlst)
+
+print("\n")
+print("Add, Remove, Insert, Modify, Search")
+kjk=input("Enter the function :")
+while kjk != "":
+    if kjk=="Add":
+        wd=input("Add name : ")
+        nlst.append(wd)
+	print("--------------------------------------------------------------------------------------------------------------------")
+        
+	print("The user select : "+kjk)
+        
+	print("Names List after adding :")
+        
+	print(nlst)
+
+    elif kjk=="Remove":
+        wd=input("Remove name: ")
+        nlst.remove(wd)
+        print("--------------------------------------------------------------------------------------------------------------------")
+        
+	print("The user select : "+kjk)
+        
+	print("Names List after removing :")
+        
+	print(nlst)
+    
+    elif kjk=="Insert":
+        print("--------------------------------------------------------------------------------------------------------------------")
+        
+	print("The user select : "+kjk)
+        
+	print("Insert Neil in the third place")
+        
+	nlst.insert(3, 'Neil')
+        
+	print("Names List after inserting :")
+        
+	print(nlst)     
+    
+    elif kjk=="Modify":
+         print("--------------------------------------------------------------------------------------------------------------------")
+        
+	 print("The user select : "+kjk)
+        
+	 print("Names that was modify : Lanz, Angelo")
+        
+	 print("Names List after modify :")
+        
+	 nlst[4:6] = 'Lanz','Angelo'
+       
+	 print(nlst)
+    
+    elif kjk=="Search":
+        def search(nlst, nlss):
+            for i in range(len(nlst)):
+                if list[i] == nlss:
+                    return True
+                    return False
+    
+        nlss= input("Search name :")
+        
+	print("--------------------------------------------------------------------------------------------------------------------")
+        
+	print("The user select : "+kjk)
+        
+	print(nlst)
+        
+	print("Name is in the list : ",nlss in nlst)
+    
+    
+    else:
+        print("Invalid Input")
+    print("\n")
+    print("Add, Remove, Insert, Modify, Search")
+    kjk=input("Enter the command :")
+print("\n")
+print("--------------------------------------------------------------------------------------------------------------------")
+
+#6
+print("Codes number 6")
+print("\n")
+print("==================================================ALL ABOUT DOGS=====================================================")
+
+dg1={"Breed of dog" : "Golden Retriever"}
+dg2={"Types of dog food" : "Kibble","Vaccine of dog" : "DHPP, rabies"}
+dg3={"Brand of Shampoo" : "Aesop Animal Shampoo", "Age of dog":"6 weeks"}
+
+print("First Dictionary : ",dg1)
+print("Second Dictionary : ",dg2)
+print("Third Dictionary : ",dg3)
+print("====================================================================================================================")
+
+print("[Type : Add, Remove, Edit, Search]")
+kjk=input("Enter the command :")
+while kjk != "":
+    if kjk=="Add":
+        dg=input("Add Breed :")
+        dg1["Add"]=""+dg
+        print("--------------------------------------------------------------------------------------------------------------------")
+        print("The user select : "+kjk)
+        print("The new breed is :"+dg)
+        print(dg1)
+        
+    elif kjk=="Remove":
+        print("--------------------------------------------------------------------------------------------------------------------")
+        print("The user select : "+kjk)
+        del dg2["Vaccine of dog"]
+        print(dg2)
+        
+    
+    elif kjk=="Edit":
+        dgh=input("Breeds of dog :")
+        dgd=input("Age of dog :")
+        dg1["Breeds of dog"] = ""+dgh
+        dg3["Age of dog"] = ""+dgd
+        print("--------------------------------------------------------------------------------------------------------------------")
+        print("The user select : "+kjk)
+        print("The new breed is : "+dgh)
+        print("The new age is : "+dgd)
+        print(dg1)
+        print(dg3)  
+
+    
+    elif kjk=="Search":
+        print("--------------------------------------------------------------------------------------------------------------------")
+        print("The user select : "+kjk)
+        if 'Brand of Shampoo' in dg3:
+            print('Brand of Shampoo found!')
+
+    
+    else:
+        print("Invalid Input")
+    print("\n")
+    print("--------------------------------------------------------------------------------------------------------------------")
+    print("[Type : Add, Remove, Edit, Search]")
+    kjk=input("Enter the command :")
