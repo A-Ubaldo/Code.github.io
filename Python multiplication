@@ -1,0 +1,21 @@
+def multip():
+
+    while True:
+
+        nmbr = int(input ("Enter the number : "))
+    
+
+        if nmbr<=15 :
+            for i in range (1, 16):      
+
+                print (nmbr, 'x', i, '=', nmbr * i)
+           
+
+
+        else :
+
+            print("Exceeded range")
+
+module.py
+import mul
+mul.multip()
