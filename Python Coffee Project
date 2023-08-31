@@ -1,0 +1,538 @@
+from getpass import getpass
+
+print("=================================================================================================================")  
+print("\n")
+space = "☕☕☕☕☕☕☕☕☕ ELICON COFFEE SHOP ☕☕☕☕☕☕☕☕☕"
+required_length = len(space) + 65
+modified_string = space.center(required_length)
+print(modified_string)
+
+itemID=['102','123','870','109','909','111','222','333','444','555']
+itemname=["Espresso","Americano","Capuccino","Latte","Mocha","Cold Brew"
+          ,"Macchiato","Drip Coffee","Cortado","Antoccino"]
+unitprice=[10,10,10,10,10,10,10,10,10,10]
+
+kape=int(10)
+kapes=int(10)
+kapess=int(10)
+kapesss=int(10)
+kapessss=int(10)
+kapeko=int(10)
+kapekoo=int(10)
+kapekooo=int(10)
+kapekoooo=int(10)
+kapekooooo=int(10)
+sk=int()
+kapestocks=kape+kapes+kapess+kapesss+kapessss+kapeko+kapekoo+kapekooo+kapekoooo+kapekooooo+sk
+
+coffee = []
+purchase = []
+cashier=0
+total =0
+
+print("=================================================================================================================")  
+print("\n")
+space = "☕☕☕☕☕☕☕☕☕ ELICON COFFEE SHOP LOGIN ☕☕☕☕☕☕☕☕☕"
+required_length = len(space) + 40
+modified_string = space.center(required_length)
+print(modified_string)
+    
+print("\n")
+print("=================================================================================================================")  
+print("DAILY REMINDER : SIP A COFFEE FIRST BEFORE WORK ☕")
+print("FOR CONFIRMATION/USERNAME : admin/cashier")
+print("\n")
+database = {"admin":"kape","cashier":"kape"}
+q=""
+while q!="0":
+    
+    q=input("YOU ARE THE ADMIN OR THE CASHIER ? ")
+    password = getpass("PASSWORD : ")
+    for i in database.keys():
+        if q == i:
+            while password != database.get(i):
+                password = getpass("⚠️ INVALID PASSWORD, TRY AGAIN : ")
+                break
+
+    while q == "admin":
+        print("HELLO, ADMIN OF ELICON COFFEE SHOP ☕")
+        print("[K] COFFEE SHOP MENU")
+        print("[A] INVENTORY [ADD, MODIFY, REMOVE, INSERT]")
+        print("[P] CHANGE USERNAME AND PASSWORD")
+        print("[E] LOG OUT")
+        print("\n")
+        ask= input("ADMIN COMMAND : ")
+        if ask=="K":
+            print("☕☕☕☕☕☕☕☕☕☕☕ START YOUR DAY WITH A CUP OF COFFEE ☕☕☕☕☕☕☕☕☕☕☕")
+            print (" _______________________________________________________________________")
+            print ("|_______________ ☕☕☕☕☕☕☕☕ M E N U ☕☕☕☕☕☕☕☕ _____________|")
+            print ("|  ITEM ID |            ITEM NAME          |         ITEM PRICE         |")
+            print ("|    102   |         ☕ Espresso            |         ₱10.00           |")
+            print ("|    123   |         ☕ Americano           |         ₱10.00           |")
+            print ("|    870   |         ☕ Capuccino           |         ₱10.00           |")
+            print ("|    109   |         ☕ Latte               |         ₱10.00           |")
+            print ("|    909   |         ☕ Mocha               |         ₱10.00           |")
+            print ("|    111   |         ☕ Cold Brew           |         ₱10.00           |")
+            print ("|    222   |         ☕ Macchiato           |         ₱10.00           |")
+            print ("|    333   |         ☕ Drip Coffee         |         ₱10.00           |")
+            print ("|    444   |         ☕ Cortado             |         ₱10.00           |")
+            print ("|    555   |         ☕ Antoccino           |         ₱10.00           |")
+            print ("|_______________________________________________________________________|")
+            continue
+
+        while ask=="A":
+            print("\n")
+            space = "☕☕☕☕☕☕☕☕☕ INVENTORY  ☕☕☕☕☕☕☕☕☕"
+            required_length = len(space) + 40
+            modified_string = space.center(required_length)
+            print(modified_string)
+    
+            print("\n")
+            print(" ITEM NAME   ☕☕☕☕☕☕☕☕  STOKCS")
+            print(" Espresso    ☕☕☕☕☕☕☕☕ ",kape)
+            print(" Americano   ☕☕☕☕☕☕☕☕ ",kapes)
+            print(" Capuccino   ☕☕☕☕☕☕☕☕ ",kapess)
+            print(" Latte       ☕☕☕☕☕☕☕☕ ",kapesss)
+            print(" Mocha       ☕☕☕☕☕☕☕☕ ",kapessss)
+            print(" Cold Brew   ☕☕☕☕☕☕☕☕ ",kapeko)
+            print(" Macchiato   ☕☕☕☕☕☕☕☕ ",kapekoo)
+            print(" Drip Coffee ☕☕☕☕☕☕☕☕ ",kapekooo)
+            print(" Cortdao     ☕☕☕☕☕☕☕☕ ",kapekoooo)
+            print(" Antoccino   ☕☕☕☕☕☕☕☕ ",kapekooooo)
+            sk= []
+            print("_______________________________________")
+            print(" Total Stocks :           ",kapestocks)
+            
+            print("==========☕☕☕☕☕☕☕☕☕ INVENTORY  ☕☕☕☕☕☕☕☕☕============")
+            att=["  ITEM ID         ITEM NAME             ITEM PRICE"]
+            cshop=   ["   102    "  "       Espresso     "  "           10"]
+            cshops=  ["   123    "  "       Americano    "  "           10"]
+            cshopss= ["   870    "  "       Capuccino    "  "           10"]
+            cshopsss=["   109    "  "       Latte        "  "           10"]
+            shop=    ["   909    "  "       Mocha        "  "           10"]
+            shops=   ["   111    "  "       Cold Brew    "  "           10"]
+            shopss=  ["   222    "  "       Macchiato    "  "           10"]
+            cs=      ["   333    "  "       Drip Coffee  "  "           10"]
+            css=     ["   444    "  "       Cortado      "  "           10"]
+            scc=     ["   555    "  "       Antoccino    "  "           10"]
+            add=     []
+            print("============================================================")
+            print(*cshop)
+            print(*cshops)
+            print(*cshopss)
+            print(*cshopsss)
+            print(*shop)
+            print(*shops)
+            print(*shopss)
+            print(*cs)
+            print(*css)
+            print(*scc)
+            print("===========================================================")
+            print("\n")
+            con=input("NEED TO EDIT SOMETHING ADMIN [y/n] ? ") 
+            print("\n")
+            while con=="y":
+                while con=="y":
+                    print("COMMAND : [K] ADD  [A] MODIFY   [P] REMOVE  [E] INSERT  [N] NEW MENU   [D] DONE")
+                    print("\n")
+                    cmd=input("ADMIN COMMAND: ")
+                    if cmd=="K":
+                        e= input("ITEM ID : ")
+                        f= input("ITEM NAME : ")
+                        g= input("ITEM PRICE : ")
+                        add.append(e)
+                        add.append(f)
+                        add.append(g)
+                        print(att)
+                        print(cshop)
+                        print(cshops)
+                        print(cshopss)
+                        print(cshopsss)
+                        print(shop)
+                        print(shops)
+                        print(shopss)
+                        print(cs)
+                        print(css)
+                        print(scc)
+                        print("NEW ITEM : ",add)
+                              
+                    elif cmd=="A":
+                        e= input("INDEX : ")
+                        cshop[int(e)]= input("VALUE : ")
+                        print("MENU WAS MODIFY BY ADMIN")
+                        print(att)
+                        print(cshop)
+                        print(cshops)
+                        print(cshopss)
+                        print(cshopsss)
+                        print(shop)
+                        print(shops)
+                        print(shopss)
+                        print(cs)
+                        print(css)
+                        print(scc)
+                        print(add)
+                
+                    elif cmd=="P":
+                        e= int(input("REMOVE INDEX : "))
+                        c=e
+                        cshop.pop(int(c))
+                        print("THE ITEM WAS REMOVED BY THE ADMIN")
+                        print(att)
+                        print(cshop)
+                        print(cshops)
+                        print(cshopss)
+                        print(cshopsss)
+                        print(shop)
+                        print(shops)
+                        print(shopss)
+                        print(cs)
+                        print(css)
+                        print(scc)
+                        print(add)
+                
+                    elif cmd=="E":
+                        e= int(input("INDEX : "))
+                        c= input("WHAT NEED TO INSERT: ")
+                        cshop.insert(int(e),c)
+                        print("INSERTED")
+                        print(att)
+                        print(cshop)
+                        print(cshops)
+                        print(cshopss)
+                        print(cshopsss)
+                        print(shop)
+                        print(shops)
+                        print(shopss)
+                        print(cs)
+                        print(css)
+                        print(scc)
+                        print(add)
+                    
+                    elif cmd=="N":
+                        print(att)
+                        print(cshop)
+                        print(cshops)
+                        print(cshopss)
+                        print(cshopsss)
+                        print(shop)
+                        print(shops)
+                        print(shopss)
+                        print(cs)
+                        print(css)
+                        print(scc)
+                        print(add)
+                    
+                    elif cmd=="D":
+                        print("DONE")
+                        print("INVENTORY UPDATED")
+                        print(att)
+                        print(cshop)
+                        print(cshops)
+                        print(cshopss)
+                        print(cshopsss)
+                        print(shop)
+                        print(shops)
+                        print(shopss)
+                        print(cs)
+                        print(css)
+                        print(scc)
+                        print(add)
+                        quit()
+                        
+                    else :
+                        print("⚠️ INVALID")
+                        continue                              
+                else:
+                    print("⚠️ CODE NOT FOUND")
+                    continue
+            if con=="n":
+                print("NO NEED TO CHANGE")
+                break
+            else:
+                print("⚠️ INVALID COMMAND")
+                continue
+        
+        while ask=="P":
+            print("⚠️ LOGIN INFORMATION OF THE SYSTEM ⚠️")
+            print("⚠️ CONFIDENTIAL PART ⚠️")
+            print(database)
+            print("[K] ADD  [A] EDIT    [P] DELETE  [E] DONE")
+            cmd=input("ADMIN COMMAND: ")
+            if cmd=="K":
+                e= input("NEW USERNAME : ")
+                c= getpass("NEW PASSWORD : ")
+                database[e]=c
+                print("ADMIN ADDED NEW USER")
+            elif cmd=="A":
+                e= input("EDIT USERNAME: ")
+                c= getpass("EDIT PASSWORD")
+                database.update({e:c})
+                print("ADMIN EDITED THE DATABASE")
+            elif cmd=="P":
+                e= input("REMOVE : ")
+                del database[e]
+                print("ADMIN DELETED THE USER")
+            elif cmd=="E":
+                con=input("ARE YOU SURE YOU WANT TO SAVE THE CHANGES [y/n] ? ")
+                if con=="y":
+                    print("DATABASE UPDATE")
+                    break
+                elif con=="n":
+                    continue
+                else:
+                    print("⚠️ INVALID")
+            else:
+                print("⚠️ INVALID")    
+        
+
+        while ask=="E":
+            print("⚠️ SYSTEM CLOSE , RUN IT AGAIN TO REFRESH")
+            print("\n")
+            print("SYSTEM IS NOW OPEN.......................")
+            print("\n")
+            q=""
+            break      
+                   
+    while q == "cashier":
+        print("☕☕☕☕☕☕☕☕☕☕☕ START YOUR DAY WITH A CUP OF COFFEE ☕☕☕☕☕☕☕☕☕☕☕")
+        print (" _______________________________________________________________________")
+        print ("|_______________ ☕☕☕☕☕☕☕☕ M E N U ☕☕☕☕☕☕☕☕ _____________|")
+        print ("|  ITEM ID |            ITEM NAME          |         ITEM PRICE        |")
+        print ("|    102   |         ☕ Espresso            |         ₱10.00           |")
+        print ("|    123   |         ☕ Americano           |         ₱10.00           |")
+        print ("|    870   |         ☕ Capuccino           |         ₱10.00           |")
+        print ("|    109   |         ☕ Latte               |         ₱10.00           |")
+        print ("|    909   |         ☕ Mocha               |         ₱10.00           |")
+        print ("|    111   |         ☕ Cold Brew           |         ₱10.00           |")
+        print ("|    222   |         ☕ Macchiato           |         ₱10.00           |")
+        print ("|    333   |         ☕ Drip Coffee         |         ₱10.00           |")
+        print ("|    444   |         ☕ Cortado             |         ₱10.00           |")
+        print ("|    555   |         ☕ Antoccino           |         ₱10.00           |")
+        print ("|    Pay   |         ☕ Pay                 |         ₱000.00          |")
+        print ("|______________________________________________________________________|")
+
+        print("\n")
+        ("HELLO, CASHIER OF ELICON COFFEE SHOP ☕")
+        cshname=input("Cashier's Name : ")
+        cus=input("Enter Customer name: ")
+        print("HELLO, WELCOME TO ELICON COFFEE SHOP ☕")
+        
+        class purchase:
+    
+            def __init__(cshop, pchase=0, k=0,recieve=0,change=0,temp=0):
+
+                cshop.pchase = pchase
+                cshop.k = k
+                cshop.recieve = recieve
+                cshop.change = change
+                cshop.temp = temp
+
+            def kopi(cshop):
+                print("GUIDE : ITEM NAME")
+                print("========================================================================================")
+                print("Espresso","||", "Americano","||",
+              "Capuccino","||", "Latte","||","Mocha")
+                print("Cold Brew","||", "Macchiato","||",
+       "Drip Coffee","||", "Cortado","||","Antoccino","||",
+       "Pay")
+                print("========================================================================================")
+                print("\n")
+#customer's name
+        print("\n")
+        while (1):
+
+            eshop = input("WHAT'S YOUR ORDER? KINDLY TELL THE ITEM ID : ")
+
+            if (eshop == "102"):
+                if kapestocks>=1:
+                    print("STOCKS :",kapestocks)
+                    ask= int(input("QUANTITY : ")) 
+                    kape-=ask
+                    kapestocks-ask
+                    quantity= ask
+                    coffee.append(itemname[0])
+                    unitprice.append (unitprice[0])
+                    cashier = cashier +1
+                    total = (unitprice[0]*ask)
+                    print("STOCKS : ",kapestocks-ask)
+                if kapestocks == 0:
+                    print ("NO STOCKS LEFT, TRY ANOTHER ITEM",kapestocks-ask)
+                         
+            elif (eshop == "123"):
+                if kapestocks>=1:
+                    print("STOCKS :",kapestocks)
+                    ask= int(input("QUANTITY : ")) 
+                    kape-=ask
+                    kapestocks-ask
+                    quantity= ask
+                    coffee.append(itemname[1])
+                    unitprice.append (unitprice[1])
+                    cashier = cashier +1
+                    total = (unitprice[0]*ask)
+                    print("STOCKS : ",kapestocks-ask)
+                if kapestocks == 0:
+                    print ("NO STOCKS LEFT, TRY ANOTHER ITEM",kapestocks-ask)
+                    
+            elif (eshop == "870"):
+                if kapestocks>=1:
+                    print("STOCKS :",kapestocks)
+                    ask= int(input("QUANTITY : ")) 
+                    kape-=ask
+                    kapestocks-ask
+                    quantity= ask
+                    coffee.append(itemname[2])
+                    unitprice.append (unitprice[2])
+                    cashier = cashier +1 
+                    total = (unitprice[0]*ask)
+                    print("STOCKS : ",kapestocks-ask)
+                if kapestocks == 0:
+                    print ("NO STOCKS LEFT, TRY ANOTHER ITEM",kapestocks-ask)
+                    
+            elif (eshop == "109"):
+                if kapestocks>=1:
+                    print("STOCKS :",kapestocks)
+                    ask= int(input("QUANTITY : ")) 
+                    kape-=ask
+                    kapestocks-ask
+                    quantity= ask
+                    coffee.append(itemname[3])
+                    unitprice.append (unitprice[3])
+                    cashier = cashier +1
+                    total = (unitprice[0]*ask)
+                    print("STOCKS : ",kapestocks-ask)
+                if kapestocks == 0:
+                    print ("NO STOCKS LEFT, TRY ANOTHER ITEM",kapestocks-ask)
+                    
+            elif (eshop == "909"):
+                if kapestocks>=1:
+                    print("STOCKS :",kapestocks)
+                    ask= int(input("QUANTITY : ")) 
+                    kape-=ask
+                    kapestocks-ask
+                    quantity= ask
+                    coffee.append(itemname[4])
+                    unitprice.append (unitprice[4])
+                    cashier = cashier +1
+                    total = (unitprice[0]*ask)
+                    print("STOCKS : ",kapestocks-ask)
+                if kapestocks == 0:
+                    print ("NO STOCKS LEFT, TRY ANOTHER ITEM",kapestocks-ask)
+                    
+            elif (eshop == "111"):
+                if kapestocks>=1:
+                    print("STOCKS :",kapestocks)
+                    ask= int(input("QUANTITY : ")) 
+                    kape-=ask
+                    kapestocks-ask
+                    quantity= ask
+                    coffee.append(itemname[5])
+                    unitprice.append (unitprice[5])
+                    cashier = cashier +1
+                    total = (unitprice[0]*ask)
+                    print("STOCKS : ",kapestocks-ask)
+                if kapestocks == 0:
+                        print ("NO STOCKS LEFT, TRY ANOTHER ITEM")
+                    
+            elif (eshop == "222"):
+                if kapestocks>=1:
+                    print("STOCKS :",kapestocks)
+                    ask= int(input("QUANTITY : ")) 
+                    kape-=ask
+                    kapestocks-ask
+                    quantity= ask
+                    coffee.append(itemname[6])
+                    unitprice.append (unitprice[6])
+                    cashier = cashier +1
+                    total = (unitprice[0]*ask)
+                    print("STOCKS : ",kapestocks-ask)
+                if kapestocks == 0:
+                        print ("NO STOCKS LEFT, TRY ANOTHER ITEM")
+            
+            elif (eshop == "333"):
+                if kapestocks>=1:
+                    print("STOCKS :",kapestocks)
+                    ask= int(input("QUANTITY : ")) 
+                    kape-=ask
+                    kapestocks-ask
+                    quantity= ask
+                    coffee.append(itemname[7])
+                    unitprice.append (unitprice[7])
+                    cashier = cashier +1
+                    print("STOCKS : ",kapestocks-ask)
+                if kapestocks == 0:
+                        print ("NO STOCKS LEFT, TRY ANOTHER ITEM")
+            
+            elif (eshop == "444"):
+                if kapestocks>=1:
+                    print("STOCKS :",kapestocks)
+                    ask= int(input("QUANTITY : ")) 
+                    kape-=ask
+                    kapestocks-ask
+                    quantity= ask
+                    coffee.append(itemname[8])
+                    unitprice.append (unitprice[8])
+                    cashier = cashier +1
+                    total = (unitprice[0]*ask)
+                    print("STOCKS : ",kapestocks-ask)
+                if kapestocks == 0:
+                        print ("NO STOCKS LEFT, TRY ANOTHER ITEM")
+            
+            elif (eshop == "555"):
+                if kapestocks>=1:
+                    print("STOCKS :",kapestocks)
+                    ask= int(input("QUANTITY : ")) 
+                    kape-=ask
+                    kapestocks-ask
+                    quantity= ask
+                    coffee.append(itemname[9])
+                    unitprice.append (unitprice[9])
+                    cashier = cashier +1
+                    total = (unitprice[0]*ask)
+                    print("STOCKS : ",kapestocks-ask)
+                if kapestocks == 0:
+                        print ("NO STOCKS LEFT, TRY ANOTHER ITEM")
+
+    
+            elif (eshop == "Pay"):
+                print ("TOTAL PURCHASE : " +str (total))
+                if (total > 0):
+                    recieve = int(input("I RECEIVED : ₱"))
+                    def receipt(receipts):
+                        price=0
+                        purchase in receipts
+                        price+=purchase['price']
+                    print("CHANGE : ₱",recieve - total )
+                    print("\n")
+                    receipt=0               
+                    while receipt <cashier :
+                        print("☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕ CUSTOMER'S BILL ☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕")
+                        print("CASHIER'S NAME : ",cshname)
+                        print("CUSTOMER'S NAME : ",cus)
+                        print ("ITEM NAME : ",coffee)
+                        print ("UNIT PRICE : ₱ : "+str(unitprice[receipt]))
+                        print("STOCKS LEFT : ",kapestocks-ask)
+                        break
+                    print("TOTAL RECEIVED : ",recieve)
+                    print("CHANGE : ₱",recieve - total )
+                    print ("TOTAL PURCHASE : " +str (total))
+                    print("☕☕☕☕☕☕☕☕☕☕☕☕☕☕ THANK YOU FOR BUYING ☕☕☕☕☕☕☕☕")
+                    from datetime import date
+                    today = date.today()
+                    print("                            DATE :", today                             )
+                    print("                             Los Baños, Laguna "                        )   
+                    print("\n")
+                    
+                    continue
+            else:
+                print("⚠️ INVALID ")
+                break
+
+def main():
+    pchase = purchase()
+
+    while (1):
+        
+            pchase.kopi()
+
+main()
