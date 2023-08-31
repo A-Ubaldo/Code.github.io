@@ -1,0 +1,339 @@
+a="BSIT"
+b="BSFT"
+c="BSGE"
+d="BSABEN"
+enr_crs=a+b+c+d
+while enr_crs :
+    print("\n")
+    
+    basc_space = "BULACAN AGRICULTURAL STATE COLLEGE"
+    required_length = len(basc_space) + 85
+    modified_string = basc_space.center(required_length)
+    print(modified_string)
+    
+    print("\n")
+    print("--------------------------------------------------------------------------------------------------------------------")
+
+    print("--------------------------------------------------------------------------------------------------------------------")
+    
+    lgn = "LOG IN"
+    required_length = len(lgn) + 110
+    modified_string = lgn.center(required_length)
+    print(modified_string)
+    un=input("Registrar Name Incharge : ")
+    print("\n")
+    print("--------------------------------------------------------------------------------------------------------------------")
+    
+    #/Course list and price per unit
+    crs = "COURSE LIST AND PRICE PER UNIT"
+    required_length = len(crs) + 90
+    modified_string = crs.center(required_length)
+    print(modified_string)
+    print("\n")
+    print("             BSIT------------------------------------------------------?220.00per unit")
+    print("             BSFT------------------------------------------------------?225.00per unit")
+    print("             BSGE------------------------------------------------------?300.00per unit")
+    print("             BSABEN----------------------------------------------------?245.00per unit")
+    
+    print("\n")
+    
+    print("--------------------------------------------------------------------------------------------------------------------")
+    
+    #/Input Student Information
+    stif = "STUDENT INFORMATION"
+    required_length = len(stif) + 80
+    modified_string = stif.center(required_length)
+    print(modified_string)
+    print("\n")
+    si=input("Enter Student ID :")
+    lne=input("Enter Student Last Name :")
+    fne=input("Enter Student First Name :")
+    mne=input("Enter Student Middle Name :")
+    bd=input("Enter Student Birthday (DD/MM/YYYY): ")
+    sx=input("Enter Student Gender :")
+    add=input("Enter Student Address :")
+    
+     #/Year Level 
+    yll = "YEAR LEVEL"
+    required_length = len(yll) + 80
+    modified_string = yll.center(required_length)
+    print(modified_string)
+    print("\n")
+    yl= input ("Enter Student Year Level (E.G. 1) : " )  
+    if yl == ("1"):
+        print ("The Subject is YL-1")
+        print ("The Student is First Year College")
+    elif yl == ("2"):
+        print ("The Subject is YL-2")
+        print ("The Student is Second Year College")
+    elif yl == ("3"):
+        print ("The Subject is YL-3")
+        print ("The Student is Third Year College")
+    elif yl == ("4"):
+        print ("The Subject is YL-4")
+        print ("The Student is Fourth Year College")
+    else:
+        print ("Invalid Input")    
+    print("\n")
+    
+    print("--------------------------------------------------------------------------------------------------------------------")
+    stif = "ENROLL SUBJECT"
+    required_length = len(stif) + 80
+    modified_string = stif.center(required_length)
+    print(modified_string)
+    print("\n")
+    ce=input ("Enter Student Course: ")
+    print("\n")
+    print("NOTE : Type (Y) if Yes and Type (N) if No")
+    print("\n") 
+    esa=input("Enroll Subject 1 : ")
+    if esa == ("Y"):
+        print("Enrolled")
+        
+    elif esa == ("N"):
+        print("No")
+    else :
+        print ("Invalid Input")
+        
+    esd=input("Enroll Subject 2 : ")
+    if esd == ("Y"):
+        print("Enrolled")
+        
+    elif esd == ("N"):
+        print("No")
+    else :
+        print ("Invalid Input")
+        
+    est=input("Enroll Subject 3 : ")
+    if est == ("Y"):
+        print("Enrolled")
+        
+    elif est == ("N"):
+        print("No")
+    else :
+        print ("Invalid Input")
+        
+    esf=input("Enroll Subject 4 : ")
+    if esf == ("Y"):
+        print("Enrolled")
+        
+    elif esf == ("N"):
+        print("No")
+    else :
+        print ("Invalid Input")
+        
+    esfv=input("Enroll Subject 5 : ")
+    if esfv == ("Y"):
+        print("Enrolled")
+        
+    elif esfv == ("N"):
+        print("No")
+    else :
+        print ("Invalid Input")
+    print("\n")
+     #/Date Enrolled
+    de=input("Enter the Date Enrolled (DD/MM/YYYY) : ")
+    #/Enrollment Status
+    es=input("Enter the Enrollment Status : ")
+    print("\n")   
+    print("--------------------------------------------------------------------------------------------------------------------")
+    
+    #/Create a Billing Function to Calculate the Total Tuition Fee.
+    crsl = "CALCULATE THE TOTAL TUITION FEE"
+    required_length = len(crsl) + 80
+    modified_string = crsl.center(required_length)
+    print(modified_string)
+    print("\n")
+    itf = 220 
+    ftf = 225
+    gef= 300
+    abef= 245
+    
+    
+    if ce == ("BSIT") :
+        print ("Total Tuition Fee :?",itf*12,".00")
+        
+    elif ce == ("BSFT") :
+        print ("Total Tuition Fee :?",ftf*12,".00")
+    
+    elif ce == ("BSGE") :
+       print ("Total Tuition Fee :?",gef*12,".00")
+       
+    elif ce == ("BSABEN") :
+        print ("Total Tuition Fee :?",abef*12,".00")
+    else:
+        print ("Invalid Input")
+    print("--------------------------------------------------------------------------------------------------------------------")
+    
+    
+    print("\n")   
+    print("--------------------------------------------------------------------------------------------------------------------")
+    scau = "STUDENT ASSESSMENT FORM"
+    required_length = len(scau) + 80
+    modified_string = scau.center(required_length)
+    print(modified_string)
+    print("\n")
+    print("Student ID : "+si)
+    print("Last Name : "+lne)
+    print("First Name : "+fne)
+    print("Middle Name : "+mne)
+    print("Birthday : "+bd)
+    print ("Gender :"+sx)
+    print("Address : "+add)
+    print("Year Level : "+yl)
+    print("Course : "+ce)
+    
+    print("\n")
+    #/List of Units per subject
+    #/1 Course , 12 Units
+    scau = "SUBJECT CODE AND UNITS"
+    required_length = len(scau) + 80
+    modified_string = scau.center(required_length)
+    print(modified_string)
+    print("\n")
+    if ce == ("BSIT") :
+        print("COURSE : BSIT")
+        print("Subject 1---------------------------------------------------------------------3 units"+esa)
+        print("Subject 2---------------------------------------------------------------------3 units"+esd)
+        print("Subject 3---------------------------------------------------------------------2 units"+est)
+        print("Subject 4---------------------------------------------------------------------3 units"+esf)
+        print("Subject 5---------------------------------------------------------------------1 units"+esfv)
+        print ("____________________________________________________________________________________")
+        
+        
+    elif ce == ("BSFT") :
+        print("COURSE : BSFT")
+        print("Subject 1---------------------------------------------------------------------3 units"+esa)
+        print("Subject 2---------------------------------------------------------------------3 units"+esd)
+        print("Subject 3---------------------------------------------------------------------3 units"+est)
+        print("Subject 4---------------------------------------------------------------------3 units"+esf)
+        print("Subject 5---------------------------------------------------------------------3 units"+esfv)
+        print ("____________________________________________________________________________________")
+        
+    
+    elif ce == ("BSGE") :
+        print("COURSE : BSGE")
+        print("Subject 1---------------------------------------------------------------------3 units"+esa)
+        print("Subject 2---------------------------------------------------------------------2 units"+esd)
+        print("Subject 3---------------------------------------------------------------------2 units"+est)
+        print("Subject 4---------------------------------------------------------------------3 units"+esf)
+        print("Subject 5---------------------------------------------------------------------1 units"+esfv)
+        print ("____________________________________________________________________________________")
+        
+    
+    elif ce == ("BSABEN") :
+        print("COURSE : BSABEN")
+        print("Subject 1---------------------------------------------------------------------5 units"+esa)
+        print("Subject 2---------------------------------------------------------------------3 units"+esd)
+        print("Subject 3---------------------------------------------------------------------2 units"+est)
+        print("Subject 4---------------------------------------------------------------------2 units"+esf)
+        print("Subject 5---------------------------------------------------------------------1 units"+esfv)
+        print ("____________________________________________________________________________________")
+        
+    
+    else:
+        print ("Invalid Input")
+    print("\n")
+    
+    print("--------------------------------------------------------------------------------------------------------------------")
+    scau = "STUDENT MISCELLANEOUS FEE FORM"
+    required_length = len(scau) + 80
+    modified_string = scau.center(required_length)
+    print(modified_string)
+    print("\n")
+    print("BREAKDOWN FEE")
+    print("Miscellaneous Fee = ?5200.00")
+    print("Transaction Fee = ?250.00")
+    print("Laboratory Fee = ?500.00")
+    print("ID Fee = ?100.00")
+    print("Library Fee = ?300.00")
+    print("Internet Fee = ?200.00")
+    print("\n")
+    
+    if ce == ("BSIT") :
+        print ("Total Tuition Fee :?",itf*12,".00")
+        
+    elif ce == ("BSFT") :
+        print ("Total Tuition Fee :?",ftf*12,".00")
+    
+    elif ce == ("BSGE") :
+       print ("Total Tuition Fee :?",gef*12,".00")
+       
+    elif ce == ("BSABEN") :
+        print ("Total Tuition Fee :?",abef*12,".00")
+    else:
+        print ("Invalid Input")
+    
+    print("Total Breakdown Fee : ?6550.00")
+    print("\n")
+  
+    if ce == ("BSIT") :
+        print ("Total tuition fee of the student :?",(itf*12)+5200 + 250 + 500 + 100 + 300 + 200,".00")
+        
+    elif ce == ("BSFT") :
+        print ("Total tuition fee of the student :?",(ftf*12)+5200 + 250 + 500 + 100 + 300 + 200,".00")
+    
+    elif ce == ("BSGE") :
+       print ("Total tuition fee of the student :?",(gef*12)+5200 + 250 + 500 + 100 + 300 + 200,".00")
+       
+    elif ce == ("BSABEN") :
+        print ("Total tuition fee of the student :?",(abef*12)+5200 + 250 + 500 + 100 + 300 + 200,".00")
+    else:
+        print ("Invalid Input")
+        
+    print("--------------------------------------------------------------------------------------------------------------------")
+    
+    print("Date Enrolled : "+de)
+    print("Enrollment Statuts : "+es)
+    print("Processed By : " +un)
+    
+    print("--------------------------------------------------------------------------------------------------------------------")
+    print("\n")
+    scau = "THANK YOU FOR PATIENTLY WAITING"
+    required_length = len(scau) + 80
+    modified_string = scau.center(required_length)
+    print(modified_string)
+    scau = "BULACAN AGRICULTURAL STATE COLLEGE REGISTRAR"
+    required_length = len(scau) + 65
+    modified_string = scau.center(required_length)
+    print(modified_string)
+    scau = "PINAOD, SAN ILDEFONSO, BULACAN"
+    required_length = len(scau) + 80
+    modified_string = scau.center(required_length)
+    print(modified_string)
+    print("\n")
+    print("--------------------------------------------------------------------------------------------------------------------")
+
+    #Check the Course
+    scau = "CHECKING IF THERE'S A VACANT SLOT"
+    required_length = len(scau) + 80
+    modified_string = scau.center(required_length)
+    print(modified_string)
+    print("\n")
+    
+    ce=input ("Enter the Course: ")
+    if ce == ("BSIT") :
+        print ("VACANT SLOT")
+        
+    elif ce == ("BSFT") :
+        print ("VACANT SLOT")
+    
+    elif ce == ("BSGE") :
+       print ("VACANT SLOT")
+    
+    elif ce == ("BSABEN") :
+        print ("FULL SLOT")
+    
+    else:
+        print ("Invalid Input")
+        
+    print("--------------------------------------------------------------------------------------------------------------------")
+
+
+
+
+import main
+
+
+
+assessment.assess()
