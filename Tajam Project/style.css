@@ -1,0 +1,626 @@
+#banner {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    background-image: url(/Assets/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #30235f;
+    background-blend-mode:overlay;
+}
+#banner h1{
+    color: white;
+    font-size: 40px;
+    font-family: auto;
+}
+
+#banner p{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: cyan;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dots {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+#story {
+    padding: 50px;
+}
+
+#story h2{
+    font-family: auto;
+}
+
+#story p{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+
+nav.navbar.navbar-expand-lg.bg-body-tertiary.me-auto\,.mb-2\,.mb-lg-0\,.me-2 {
+    position: absolute;
+    z-index: 1;
+    height: 50px;
+    width: 100%;
+    padding: 30px;
+    background-color: #0000 !important;
+    justify-content: center;
+
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+#watch {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    background-image: url(/Assets/watch.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #30235f;
+    background-blend-mode:overlay;
+}
+
+#watch h3{
+    color: white;
+    font-family: auto;
+}
+.button {
+    background-color: cyan;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+  }
+.circle {border-radius: 50%;}
+
+#expertise {
+    padding: 50px;
+}
+
+#expertise h4{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+#expertise p{
+    color: black;
+    font-family: auto;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+  }
+
+#team {
+    height: 120vh;
+    align-items: center;
+    background-image: url(/Assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #30235f;
+    background-blend-mode:overlay;
+}
+
+#team h5{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+
+}
+
+#team p{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+#team h6{
+    text-align: center;
+    color: white;
+}
+
+#team h11{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+
+#team .card {
+    background-color: transparent;
+    border-radius: 3px;
+    border-color: gray;
+}
+
+#works h6{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.image-tile-grid {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 80px;
+  }
+
+  #works {
+    padding: 50px;
+}
+
+
+#round {
+    height: 100vh;
+    align-items: center;
+    background-image: url(/Assets/bga.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #30235f;
+    background-blend-mode:overlay;
+}
+
+#round p{
+    color: white;
+    font-family: auto;
+    font-size: 25px;
+    
+}
+
+  #round h7{
+    color: white;
+    font-family: auto;
+    font-size: 100px;
+    font-weight: 600;
+}
+
+input[type=text], select, textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  #news h6{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+#news {
+    padding: 10px;
+}
+  
+  #last {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    background-image: url(/Assets/lb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #30235f;
+    background-blend-mode:overlay;
+}
+
+#last{
+    color: white;
+ }
+ #last p{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #banner {
+        height: auto;
+        min-height: 300px;
+    }
+    #banner h1 {
+        margin-top: 190px;
+        font-size: 25px;
+    }
+    #banner p {
+        font-size: 14px;
+    }
+
+    nav.navbar.navbar-expand-lg.bg-body-tertiary.me-auto\,.mb-2\,.mb-lg-0\,.me-2 {
+        padding: 2px;
+    }
+    
+    .navbar ul {
+        justify-content: space-between; 
+    }
+    
+    .dot,
+    .dots {
+        height: 8px;
+        width: 8px;
+        margin-bottom: 50px;
+    }
+    
+
+    #story {
+        padding: 10px;
+    }
+      
+    #story h2 {
+        font-size: 20px;
+    }
+      
+    #story p {
+        font-size: 14px;
+    }
+    
+    
+    #watch {
+        height: auto;
+        min-height: 300px;
+    }
+    #watch h3 {
+        font-size: 24px;
+    }
+    .button {
+        font-size: 14px;
+    }
+
+    #expertise {
+        padding: 50px;
+    }
+    
+    #expertise h4 {
+        font-size: 40px;
+    }
+    
+    #expertise p {
+        font-size: 10px;
+    }
+      
+    .row {
+        flex-wrap: wrap;
+        margin: -10px;
+    }
+    
+    .col {
+        padding: 10px;
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    #team {
+        height: auto;
+        min-height: 300px;
+    }
+    #team h5 {
+        font-size: 24px;
+    }
+    #team p {
+        font-size: 14px;
+    }
+    #team h11 {
+        font-size: 14px;
+    }
+    
+    #works {
+        padding: 10px;
+    }
+    #works h6 {
+        font-size: 20px;
+    }
+    .image-tile-grid {
+        width: 60px;
+        height: 80px;
+    }
+    
+    #round {
+        height: auto;
+        min-height: 300px;
+        background-position: center;
+    }
+        
+    #round h7 {
+        font-size: 50px;
+    }
+        
+    #round p {
+        font-size: 16px;
+    }
+    
+    #news h6 {
+        font-size: 24px;
+    }
+   
+    #last {
+        height: auto;
+        min-height: 300px;
+    }
+    #last p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #banner {
+    height: auto;
+    min-height: 500px;
+    }
+    #banner h1 {
+    margin-top: 290px;
+    font-size: 40px;
+    }
+    #banner p {
+    font-size: 16px;
+    }
+    
+nav.navbar.navbar-expand-lg.bg-body-tertiary.me-auto\,.mb-2\,.mb-lg-0\,.me-2 {
+    padding: 10px;
+}
+
+.navbar ul {
+    justify-content: space-between; 
+}
+
+
+.dot,
+.dots {
+    height: 10px;
+    width: 10px;
+    margin-bottom: 70px;
+}
+
+
+#story {
+    padding: 20px;
+}
+  
+#story h2 {
+    font-size: 28px;
+}
+  
+#story p {
+    font-size: 16px;
+}
+
+
+#watch {
+    height: auto;
+    min-height: 500px;
+}
+#watch h3 {
+    font-size: 40px;
+}
+.button {
+    font-size: 16px;
+}
+
+#expertise {
+    padding: 100px;
+}
+
+#expertise h4 {
+    font-size: 60px;
+}
+
+#expertise p {
+    font-size: 16px;
+}
+  
+.row {
+    flex-wrap: wrap;
+    margin: -20px;
+}
+
+.col {
+    padding: 20px;
+    flex: 50%;
+    max-width: 50%;
+}
+
+#team {
+    height: auto;
+    min-height: 500px;
+}
+#team h5 {
+    font-size: 32px;
+}
+#team p {
+    font-size: 18px;
+}
+#team h11 {
+    font-size: 16px;
+}
+
+
+#works {
+    padding: 20px;
+}
+#works h6 {
+    font-size: 28px;
+}
+.image-tile-grid {
+    width: 100px;
+    height: 80px;
+}
+
+
+#round {
+    height: auto;
+    min-height: 500px;
+    background-position: center;
+}
+    
+#round h7 {
+    font-size: 80px;
+}
+    
+#round p {
+    font-size: 18px;
+}
+
+
+#news h6 {
+    font-size: 32px;
+}
+
+
+#last {
+    height: auto;
+    min-height: 500px;
+}
+#last p {
+    font-size: 18px;
+}
+}
+
+/* Desktop */
+@media screen and (min-width: 769px) {
+    #banner {
+        height: 500px;
+        min-height: 300px;
+    }
+    #banner h1 {
+        margin-top: 100px;
+        font-size: 50px;
+    }
+    #banner p {
+        font-size: 16px;
+    }
+
+    nav.navbar.navbar-expand-lg.bg-body-tertiary.me-auto\,.mb-2\,.mb-lg-0\,.me-2 {
+        padding: 20px;
+    }
+    
+    .navbar ul {
+        justify-content: flex-end; 
+    }
+    
+    .dot,
+    .dots {
+        height: 16px;
+        width: 16px;
+        margin-bottom: 100px;
+    }
+    
+
+    #story {
+        padding: 50px;
+    }
+      
+    #story h2 {
+        font-size: 30px;
+    }
+      
+    #story p {
+        font-size: 18px;
+    }
+    
+    
+    #watch {
+        height: 500px;
+        min-height: 300px;
+    }
+    #watch h3 {
+        font-size: 36px;
+    }
+    .button {
+        font-size: 18px;
+    }
+
+    #expertise {
+        padding: 100px;
+    }
+    
+    #expertise h4 {
+        font-size: 60px;
+    }
+    
+    #expertise p {
+        font-size: 16px;
+    }
+      
+    .row {
+        flex-wrap: nowrap;
+        margin: 0;
+    }
+    
+    .col {
+        padding: 0;
+        flex: 33.33%;
+        max-width: 33.33%;
+    }
+
+    #team {
+        height: 800px;
+        min-height: 300px;
+    }
+    #team h5 {
+        font-size: 36px;
+    }
+    #team p {
+        font-size: 20px;
+    }
+    #team h11 {
+        font-size: 16px;
+    }
+    
+    #works {
+        padding: 50px;
+    }
+    #works h6 {
+        font-size: 30px;
+    }
+    .image-tile-grid {
+        width: 100px;
+        height: 80px;
+    }
+    
+    #round {
+        height: 600px;
+        min-height: 300px;
+        background-position: center;
+    }
+        
+    #round h7 {
+        font-size: 80px;
+    }
+        
+    #round p {
+        font-size: 20px;
+    }
+    
+    #news h6 {
+        font-size: 36px;
+    }
+   
+    #last {
+        height: 400px;
+        min-height: 300px;
+    }
+    #last p {
+        font-size: 20px;
+    }
+}
